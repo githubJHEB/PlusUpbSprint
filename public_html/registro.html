@@ -8,27 +8,17 @@ and open the template in the editor.
     <head>
         <title>Formulario de registro</title>
         <meta charset="UTF-8">
-        <script src="validaciones.js"></script>
+        <link rel="stylesheet" href="ccs/estilos.css">
+
     </head>
-    <body>
-        
-        
-        <form id="form_registrarse" >
+    <!--Set html structure to the form jheb-->
+    <body id="body_form_registration">
+        <form id="form_registrarse">
             <h1>Formulario de registro</h1>
             <input id="in_nombre_usuario" type="text" maxlength="20" placeholder="Nombre de usuario"/>
-            <input id="in_contrasena" type="password" maxlength="20" placeholder="Contraseña"/>
+            <input id="in_contrasena" type="text" minlength="6"  maxlength="20" placeholder="Contraseña" onkeypress="return validar_contrasena(event)" />
             <input id="in_confirmar_contrasena" type="password" maxlength="20" placeholder="Confirmar contraseña"/>
-            <button id="btn_registrar_usuario" onclick="myFunction('Pesti');">Registrarse</button>
-            <button onclick="return myFunction1('Harry Potter','Wizard')">Try it</button>
-            <p id="demo"></p>
-            <p id="demo1"></p>
-            <p id="demo2"></p>
-
-
+            <button id="btn_registrar_usuario" type="button">Registrarse</button>
         </form>
-        <div id ="error"></div>
-        
     </body>
-   
-
 </html>

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 *{
@@ -25,8 +26,6 @@
     font-family: "Oswald";
     text-align: center;
     background:#a1e0e7;
-
-
 }
 
 
@@ -43,10 +42,11 @@
 }
 
 .registro {
-    grid-area: registro;
-    background: #41a5c9;
+    grid-area: registro;  
+    background: #41a5c9;  /* Change from #ffffff to #41a5c9 by: Jorge-Villalba**/
     float: right;
     width: 300px;
+    border: 2px solid #828c95; /* New line add by: Jorge-Villalba**/
 }
 
 #vertical_navbar img{
@@ -58,18 +58,16 @@
     height: 150px;
     position: relative;
     right: -40px;
-
-
 }
 
 #btn_Registro {
-    background: #a1e0e7;
+    background: #434343; /* Change from #a1e0e7; to #434343 by: Jorge-Villalba**/
     display: block;
     margin: 5px auto;
-    border: 3px solid #3c6382;
+    border: 3px solid #707070; /* Change from #3c6382; to #707070 by: Jorge-Villalba**/
     padding: 14px 40px;
     outline: none;
-    color: aqua;
+    color:#4e4d4d; /* Change from aqua; to #4e4d4d by: Jorge-Villalba**/
     border-radius: 10px;
     transition: 0.25s;
     cursor: pointer;
@@ -93,7 +91,6 @@
     left: -10px;
     top: 5px;
     right: 10px;
-
 }
 
 #btn_Registro:hover {
@@ -114,14 +111,14 @@
     left: -100px;
 }
 
-/*Start estyle register form jheb*/
+/*Start style register form jheb*/
 
 ::placeholder {
     color: #707070;
 }
 #body_form_registration{
     background: #434343; ;/* Set color background jheb*/
-    background-position: center;/* Put on the center the content of this body */
+    background-position: center;/* Put on the center the content of this body jheb*/
 }
 
 #form_registrarse{
@@ -164,15 +161,16 @@
     margin: 20px auto 10px;
 
     /* Set by deaful and initian and gradient colors jheb*/
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
-    background: #4c4c4c; /* Old browsers */
-    background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-    border: 1px solid #232323;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,828c95+48,b5bdc8+100 */
+    background: #b5bdc8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #828c95 48%, #b5bdc8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#828c95 48%,#b5bdc8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#828c95 48%,#b5bdc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
+
+    border: 1px solid #b5bdc8;
     color: #fff;
-    box-shadow:10px 10px 10px #000;
+    box-shadow:5px 5px 5px #000;
     border-radius: 13px;
     cursor:pointer; /*mouse cursor to be displayed jheb*/
 }
@@ -183,12 +181,12 @@
 
 #form_registrarse button:active {
     /* Set gradient colors when user touch button jheb**/
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#131313+0,1c1c1c+9,2b2b2b+24,111111+40,000000+49,2c2c2c+50,474747+61,666666+75,595959+88,4c4c4c+100 */
-    background: #131313; /* Old browsers */
-    background: -moz-linear-gradient(top,  #131313 0%, #1c1c1c 9%, #2b2b2b 24%, #111111 40%, #000000 49%, #2c2c2c 50%, #474747 61%, #666666 75%, #595959 88%, #4c4c4c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #131313 0%,#1c1c1c 9%,#2b2b2b 24%,#111111 40%,#000000 49%,#2c2c2c 50%,#474747 61%,#666666 75%,#595959 88%,#4c4c4c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #131313 0%,#1c1c1c 9%,#2b2b2b 24%,#111111 40%,#000000 49%,#2c2c2c 50%,#474747 61%,#666666 75%,#595959 88%,#4c4c4c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-9 */
-}
-/*End estyle register form jheb*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+52,828c95+64,b5bdc8+100 */
+    background: #b5bdc8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 52%, #828c95 64%, #b5bdc8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 52%,#828c95 64%,#b5bdc8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 52%,#828c95 64%,#b5bdc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
 
+    }
+/*End estyle register form jheb*/
