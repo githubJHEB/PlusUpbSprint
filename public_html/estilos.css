@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo titulo registro"
+        "texto1 texto2 registro"
+        "texto1 texto2 registro";
+    position: absolute;}
+
+.titulo {
+    grid-area: titulo;
+    color: #063970;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Oswald";
+    text-align: center;
+    background:#a1e0e7;
+
+
+}
+
+
+.texto1 {
+    grid-area: texto1;
+    font-family: sans-serif;
+    background:#a1e0e7;
+}
+
+.texto2 {
+    grid-area: texto2;
+    font-family: sans-serif;
+    background:#a1e0e7;
+}
+
+.registro {
+    grid-area: registro;
+    background: #41a5c9;
+    float: right;
+    width: 300px;
+}
+
+#vertical_navbar img{
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 30px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: -40px;
+
+
+}
+
+#btn_Registro {
+    background: #a1e0e7;
+    display: block;
+    margin: 5px auto;
+    border: 3px solid #3c6382;
+    padding: 14px 40px;
+    outline: none;
+    color: aqua;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-top: 500px;
+    position: relative;
+    left: 0px;
+}
+
+#link_Registro{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 18px;
+    text-align: center;
+    margin : 5px auto;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 40%;
+    margin-top:-50%;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    right: 10px;
+
+}
+
+#btn_Registro:hover {
+    background:#e28743 ;
+}
+
+#btn_Registro:active {
+    background: #1e81b0;
+    color: white;
+}
+
+#vertical_navbar label{
+    font-family: "Oswald";
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 500px;
+    left: -100px;
+}
+
+/*Start estyle register form jheb*/
+
+::placeholder {
+    color: #707070;
+}
+#body_form_registration{
+    background: #434343; ;/* Set color background jheb*/
+    background-position: center;/* Put on the center the content of this body */
+}
+
+#form_registrarse{
+    background-image: url(../img/background_registro_form.jpg);/* Set image as a background form jheb*/
+    width: 360px; /* Set siz 360px jheb*/
+    height: auto;
+    border: 1px solid #4e4d4d;
+    border-radius:13px;
+    box-shadow: 10px 10px 10px #000;
+    margin: 150px auto;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+#form_registrarse h1 { /* Set subtitle jheb*/
+    text-align:center;
+    color: #fff;
+    font-weight:normal;
+    font-size: 22pt;
+    margin: 30px 0px;
+    font-family: "Oswald";
+    text-shadow: 5px 5px 5px #000;
+}
+#form_registrarse input{ /* Set all text and password inputs jheb*/
+    border: none;
+    width: 280px;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 10px 30px;
+    color: #000;
+    text-align:center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #000;
+}
+#form_registrarse button{ /* Set features button "Resgistrase" jheb*/
+    display: block;
+    width: 135px;
+    height:50px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto 10px;
+
+    /* Set by deaful and initian and gradient colors jheb*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #232323;
+    color: #fff;
+    box-shadow:10px 10px 10px #000;
+    border-radius: 13px;
+    cursor:pointer; /*mouse cursor to be displayed jheb*/
+}
+
+#form_registrarse button:hover{ /* Set change color whe user is over area button whitout clicking jheb*/
+    background: #3a3a3a;
+}
+
+#form_registrarse button:active {
+    /* Set gradient colors when user touch button jheb**/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#131313+0,1c1c1c+9,2b2b2b+24,111111+40,000000+49,2c2c2c+50,474747+61,666666+75,595959+88,4c4c4c+100 */
+    background: #131313; /* Old browsers */
+    background: -moz-linear-gradient(top,  #131313 0%, #1c1c1c 9%, #2b2b2b 24%, #111111 40%, #000000 49%, #2c2c2c 50%, #474747 61%, #666666 75%, #595959 88%, #4c4c4c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #131313 0%,#1c1c1c 9%,#2b2b2b 24%,#111111 40%,#000000 49%,#2c2c2c 50%,#474747 61%,#666666 75%,#595959 88%,#4c4c4c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #131313 0%,#1c1c1c 9%,#2b2b2b 24%,#111111 40%,#000000 49%,#2c2c2c 50%,#474747 61%,#666666 75%,#595959 88%,#4c4c4c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-9 */
+}
+/*End estyle register form jheb*/
+
