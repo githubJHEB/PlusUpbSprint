@@ -1,4 +1,10 @@
 function validar_nombre_usuario(string){
+     valor = document.getElementById("in_nombre_usuario").value;
+	if (/^[a-zA-Z]{6,30}/.test(valor)){
+		return true;
+     }else{
+          return false;
+	}
 }
 function validar_contrasena(string){
      var key = string.keyCode,
