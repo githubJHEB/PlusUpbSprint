@@ -117,7 +117,7 @@
     color: #707070;
 }
 #body_form_registration{
-    background: #434343; ;/* Set color background jheb*/
+    background:#fff;/* Set color background jheb*/
     background-position: center;/* Put on the center the content of this body jheb*/
 }
 
@@ -125,10 +125,10 @@
     background-image: url(../img/background_registro_form.jpg);/* Set image as a background form jheb*/
     width: 360px; /* Set siz 360px jheb*/
     height: auto;
-    border: 1px solid #4e4d4d;
+    border: 1px solid #a1e0e7;
     border-radius:13px;
-    box-shadow: 10px 10px 10px #000;
-    margin: 150px auto;
+    box-shadow: 5px 5px 5px #000;
+    margin: 100px auto;
     padding-top: 20px;
     padding-bottom: 20px
 }
@@ -150,7 +150,7 @@
     color: #000;
     text-align:center;
     border-radius: 8px;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 2px 2px 2px #000;
 }
 #form_registrarse button{ /* Set features button "Resgistrase" jheb*/
     display: block;
