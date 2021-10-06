@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Conáctanos</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="ccs/estilos.css">
+<html lang="es">
+<head>
+	<title>Contactenos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="contacto/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contacto/css/util.css">
+	<link rel="stylesheet" type="text/css" href="contacto/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<header style = "text-align: center; background-color: #f2f2f2;">
+		<img src="img/logo.png" alt="Icono empresa"  style= "max-width:10%; max-height:10%;" >
+	</header>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Envíanos tu mensaje
+				</span>
 
-    </head>
-    <!--Set html structure to the form jheb-->
-    <body id="body_contactanos">
-      TODO contáctanos
-    </body>
+				<div class="wrap-input100 validate-input" data-validate="Por favor ingrese su nombre">
+					<input class="input100" type="text" name="name" placeholder="Nombre Completo">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Por favor ingrese su email">
+					<input class="input100" type="text" name="email" placeholder="E-mail">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Por favor ingrese su teléfono">
+					<input class="input100" type="text" name="phone" placeholder="Teléfono">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Por favor ingrese su mensaje">
+					<textarea class="input100" name="message" placeholder="Su Mensaje"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							Enviar
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="contacto/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/vendor/bootstrap/js/popper.js"></script>
+	<script src="contacto/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/vendor/daterangepicker/moment.min.js"></script>
+	<script src="contacto/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="contacto/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<footer>
+	
+</footer>
+
+</body>
 </html>
