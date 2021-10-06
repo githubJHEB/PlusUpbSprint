@@ -3,20 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 *{
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
+   
     grid-template-areas:
-        "titulo titulo registro"
-        "texto1 texto2 registro"
-        "texto1 texto2 registro";
-    position: absolute;}
+        "titulo titulo titulo titulo registro"
+        "texto texto texto texto  registro"
+        "texto texto texto texto registro"
+        "pie pie pie pie pie";
+    position: relative;}
+
+
+.pie { grid-area: pie;
+position: absolute;
+bottom: 0;
+width: 100%;
+left: 0.5%;
+height: 8px;
+
+}
 
 .titulo {
     grid-area: titulo;
@@ -29,25 +40,31 @@
 }
 
 
-.texto1 {
-    grid-area: texto1;
-    font-family: sans-serif;
-    background:#a1e0e7;
-}
 
-.texto2 {
-    grid-area: texto2;
-    font-family: sans-serif;
-    background:#a1e0e7;
+
+.texto { 
+grid-area: texto;
+align-content: center;
+background-color: #a1e0e7;
+border: 0px;
 }
 
 .registro {
     grid-area: registro;
-    background: #41a5c9;  /* Change from #ffffff to #41a5c9 by: Jorge-Villalba**/
+    background:#41a5c9;  /* Change from #ffffff to #41a5c9 by: Jorge-Villalba**/
     float: right;
-    width: 300px;
     border: 2px solid #828c95; /* New line add by: Jorge-Villalba**/
+    position: relative;
+    width: 19.98%;
+    height: 100%;
 }
+
+#vertical_navbar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 
 #vertical_navbar img{
     border-radius: 100%;
@@ -55,7 +72,7 @@
     margin-left: 30px;
     border-radius: 50%;
     width: 150px;
-    height: 150px;
+    height: 130px;
     position: relative;
     right: -40px;
 }
@@ -192,33 +209,33 @@
 /*End estyle register form jheb*/
 
   .cardBox {
-    float: left;
+    float: right;
     font-size: 1.2em;
     margin: 1% 0 0 1%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    width: 48%;
+    width: 23.7%;
   }
-
+  
   .cardBox:hover .card {
     transform: rotateY( 180deg);
   }
-
+  
   .card {
-
+    
     cursor: default;
-    height: 350px;
+    height: 500px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
   }
-
+  
   .card p {
     margin-bottom: 1.8em;
   }
-
+  
   .card .front,
   .card .back {
     backface-visibility: hidden;
@@ -226,26 +243,26 @@
     color: rgb(12, 4, 4);
     display: block;
     font-size: 0.8em;
-    height: 100%;
+    height: 10%;
     padding: 0.8em;
-    position: absolute;
     text-align: center;
     width: 100%;
   }
-
+  
   .card .front strong {
-    background: #fff;
+
     border-radius: 100%;
     color: #222;
     font-size: 0.9em;
     line-height: 30px;
     padding: 0 7px 4px 6px;
+    height: 5%;
   }
-
+  
   .card .back {
     transform: rotateY( 180deg);
   }
-
+  
   .card .back a {
     padding: 0.3em 0.5em;
     background: #333;
@@ -255,44 +272,29 @@
     font-size: 0.9em;
     transition: all 0.5s ease 0s;
   }
-
+  
   .card .back a:hover {
-    background: #fff;
+    
     color: #333;
     text-shadow: 0 0 1px #333;
   }
-
-  .cardBox:nth-child(1) .card .back {
-
-  }
-
-  .cardBox:nth-child(2) .card .back {
-
-  }
-
-  .cardBox:nth-child(3) .card .back {
-
-  }
-
-  .cardBox:nth-child(4) .card .back {
-
-  }
-
+  
+  
   .cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
   }
-
+  
   .cardBox:nth-child(3) .card {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
   }
-
+  
   .cardBox:nth-child(4) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2.5s 1;
   }
-
+  
   @-webkit-keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -301,7 +303,7 @@
       transform: rotateY( 0deg);
     }
   }
-
+  
   @keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -310,12 +312,11 @@
       transform: rotateY( 0deg);
     }
   }
-
   @media screen and (max-width: 767px) {
     .cardBox {
       margin-left: 2.8%;
       margin-top: 3%;
-      width: 46%;
+      width: 100%;
     }
     .card {
       height: 285px;
@@ -340,78 +341,8 @@
     padding: 0;
     margin: 0;
   }
-  :root{
-    --alfa: rgba(255,255,255,0.0);
-    --blanco: rgba(255,255,255,1);
-    --blanco-alfa05: rgba(255,255,255,.5);
-    --blanco-alfa08: rgba(255,255,255,.8);
-    --blanco-humo: rgba(230,230,230,1);
-    --negro: rgba(0,0,0,1);
-    --negro-heippi: rgba(37,32,33,1);
-    --negro-heippi-alfa: rgba(37,32,33,0);
-    --negro-heippi-alfa09: rgba(37,32,33,.9);
-    --naranja: rgba(255,102,0,1);
-    --naranja-oscuro: rgba(236,69,0,1);
-    --naranja-claro: rgba(255,133,15,1);
-    --gris: rgba(65,60,61,1);
-    --gris-alfa: rgba(65,60,61,0);
-    --gris-alfa098: rgba(65,60,61,.98);
-    --gris-oscuro: rgba(52,47,48,1);
-    --gris-claro: rgba(107,103,104,1);
-    --rojo: rgba(236,64,57,1);
-    --rojo-oscuro: rgba(162,48,22,1);
-    --rojo-claro: rgba(236,85,57,1);
-    --verde: rgba(161,197,23,1);
-    --verde-oscuro: rgba(148,181,21,1);
-    --cyan: rgba(0,175,175,1);
-    --cyan-oscuro: rgba(0,136,101,1);
-    --cyan-claro: rgba(102,209,184,1);
-    --amarillo: rgba(255,211,0,1);
-    --morado: rgba(201,78,150,1);
-    --morado-oscuro: rgba(175,17,103,1);
-    --morado-claro: rgba(209,120,172);
-    --azul: rgba(0,46,167,1);
-    --azul-oscuro: rgba(6,21,61,1);
-    --azul-claro: rgba(25,85,243,1);
-
-    --montserrat: 'montserrat', verdana, sans-serif;
-    --raleway: 'raleway', calibri, sans-serif ;
-
-    --gradiante-der-rojo-amarillo:
-      linear-gradient(to right,
-        var(--rojo) 0%,
-        var(--amarillo) 100%);
-
-    --gradiante-der-blanco-alfa:
-      linear-gradient(to right,
-        var(--blanco-alfa05) 0%,
-        var(--alfa) 100%);
-
-    --gradiante-arr-blanco-alfa:
-      linear-gradient(to top,
-        var(--blanco-alfa08) 0%,
-        var(--blanco-alfa05) 50%,
-        var(--alfa) 100%);
-  }
-
-  .skin{
-    --img01-full: var(--img-metrics-bkg-01-full);
-    --img01-movil: var(--img-metrics-bkg-01-full);
-    --img02-full: var(--img-metrics-bkg-02-full);
-    --img02-movil: var(--img-metrics-bkg-02-movil);
-    --img03-full: var(--img-metrics-bkg-03-full);
-    --img03-movil: var(--img-metrics-bkg-03-movil);
-
-    --textura01: var(--img-metrics-texture-01);
-
-    --type01: var(--montserrat);
-    --type02: var(--raleway);
-
-    --gradiante01: var(--gradiante-der-rojo-amarillo);
-    --gradiante02: var(--gradiante-der-blanco-alfa);
-    --gradiante02-arr: var(--gradiante-arr-blanco-alfa);
-  }
-
+  
+  
   body{
     font-family: var(--type02);
     font-size: 18px;
@@ -423,16 +354,7 @@
     height: auto;
   }
 
-  .hidding{
-    position: absolute;
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  .btn{
-    font-family: var(--type-01);
-    font-weight: 800;
-  }
+  
 
   a, .btn{
     display: inline-block;
@@ -446,19 +368,9 @@
     text-align: justify;
   }
 
-  .cta {
-    background-image: var(--gradiante01);
-    border-radius: 0.2em;
-    text-transform: uppercase;
-    padding: .8em 1.6em;
-    color: var(--blanco);
-    font-weight: 900;
-    text-decoration: none;
-    margin: .2em;
-  }
-
+  
   .container{
-    position: relative;
+    position: absolute;
   }
 
   .title{
@@ -494,9 +406,6 @@
     background-color: var(--blanco-humo);
   }
 
-  .menu.principal{
-
-  }
 
   .menu.top,
   .menu.principal,
@@ -519,14 +428,12 @@
   .menu.principal .menu {
     background: var(--negro-heippi-alfa09);
     position: absolute;
-    top: 100%;
     right: 0;
     width: 100%;
     justify-content: center;
     transition: max-height ease .3s;
     flex-wrap: wrap;
     overflow: hidden;
-    max-height: 0px;
   }
 
   .btn.movil:hover ~ .menu,
@@ -541,9 +448,6 @@
 
   }
 
-  .menu .logo-container {
-    padding-left: 0;
-  }
 
   .menu.top a {
     padding: .3em 1em;
@@ -558,7 +462,6 @@
 
   .menu.principal .menu a {
     color: var(--naranja);
-    padding: 1em;
     text-transform: uppercase;
     font-weight: 100;
   }
@@ -747,7 +650,59 @@
       text-align: center;
       align-items: center;
     }
-
+    :root{
+      --alfa: rgba(255,255,255,0.0);
+      --blanco: rgba(255,255,255,1);
+      --blanco-alfa05: rgba(255,255,255,.5);
+      --blanco-alfa08: rgba(255,255,255,.8);
+      --blanco-humo: rgba(230,230,230,1);
+      --negro: rgba(0,0,0,1);
+      --negro-heippi: rgba(37,32,33,1);
+      --negro-heippi-alfa: rgba(37,32,33,0);
+      --negro-heippi-alfa09: rgba(37,32,33,.9);
+      --naranja: rgba(255,102,0,1);
+      --naranja-oscuro: rgba(236,69,0,1);
+      --naranja-claro: rgba(255,133,15,1);
+      --gris: rgba(65,60,61,1);
+      --gris-alfa: rgba(65,60,61,0);
+      --gris-alfa098: rgba(65,60,61,.98);
+      --gris-oscuro: rgba(52,47,48,1);
+      --gris-claro: rgba(107,103,104,1);
+      --rojo: rgba(236,64,57,1);
+      --rojo-oscuro: rgba(162,48,22,1);
+      --rojo-claro: rgba(236,85,57,1);
+      --verde: rgba(161,197,23,1);
+      --verde-oscuro: rgba(148,181,21,1);
+      --cyan: rgba(0,175,175,1);
+      --cyan-oscuro: rgba(0,136,101,1);
+      --cyan-claro: rgba(102,209,184,1);
+      --amarillo: rgba(255,211,0,1);
+      --morado: rgba(201,78,150,1);
+      --morado-oscuro: rgba(175,17,103,1);
+      --morado-claro: rgba(209,120,172);
+      --azul: rgba(0,46,167,1);
+      --azul-oscuro: rgba(6,21,61,1);
+      --azul-claro: rgba(25,85,243,1);
+  
+      --montserrat: 'montserrat', verdana, sans-serif;
+      --raleway: 'raleway', calibri, sans-serif ;
+  
+      --gradiante-der-rojo-amarillo:
+        linear-gradient(to right,
+          var(--rojo) 0%,
+          var(--amarillo) 100%);
+  
+      --gradiante-der-blanco-alfa:
+        linear-gradient(to right,
+          var(--blanco-alfa05) 0%,
+          var(--alfa) 100%);
+  
+      --gradiante-arr-blanco-alfa:
+        linear-gradient(to top,
+          var(--blanco-alfa08) 0%,
+          var(--blanco-alfa05) 50%,
+          var(--alfa) 100%);
+    }
     .menu.principal .menu a{
       text-transform: initial;
       font-size: 0.6em; /*Change size text menu jheb*/
