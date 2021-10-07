@@ -209,6 +209,7 @@ border: 0px;
   }
 
   .card {
+  margin-top: 150px;
 
     cursor: default;
     height: 500px;
