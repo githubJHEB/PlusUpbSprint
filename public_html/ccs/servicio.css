@@ -1,0 +1,23 @@
+body{
+  background-color: lightyellow;
+}
+
+.main1{
+  width: 1500px;
+  text-align: center;
+}
+.main{
+  display: inline-block;
+  width: 300px;
+  border: 1px solid grey;
+  text-align: center;
+  margin: 0px 5px;
+  shadow
+}
+.main img {
+  margin-top: 50px;
+}
+.main p {
+  width: 250px;
+  margin: 0px auto;
+}

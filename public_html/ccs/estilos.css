@@ -9,25 +9,18 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr 10%;
     gap: 0px 0px;
-   
+
     grid-template-areas:
-        "titulo titulo titulo titulo registro"
-        "texto texto texto texto  registro"
-        "texto texto texto texto registro"
+        "titulo titulo titulo titulo titulo"
+        "texto texto texto texto  texto"
+        "texto texto texto texto texto"
         "pie pie pie pie pie";
     position: relative;}
 
 
-.pie { grid-area: pie;
-position: absolute;
-bottom: 0;
-width: 100%;
-left: 0.5%;
-height: 8px;
 
-}
 
 .titulo {
     grid-area: titulo;
@@ -39,25 +32,19 @@ height: 8px;
     background:#a1e0e7;
 }
 
-
-
-
-.texto { 
+.texto {
 grid-area: texto;
-align-content: center;
-background-color: #a1e0e7;
+background-color: #f48fb1;
 border: 0px;
 }
 
-.registro {
-    grid-area: registro;
-    background:#41a5c9;  /* Change from #ffffff to #41a5c9 by: Jorge-Villalba**/
-    float: right;
-    border: 2px solid #828c95; /* New line add by: Jorge-Villalba**/
-    position: relative;
-    width: 19.98%;
-    height: 100%;
+.pie {
+  grid-area: pie;
+  text-align: center;
+  font-size: 12px;
+  background:#ce93d8;
 }
+
 
 #vertical_navbar{
     width: 100%;
@@ -216,13 +203,13 @@ border: 0px;
     transition: all 0.3s ease 0s;
     width: 23.7%;
   }
-  
+
   .cardBox:hover .card {
     transform: rotateY( 180deg);
   }
-  
+
   .card {
-    
+
     cursor: default;
     height: 500px;
     transform-style: preserve-3d;
@@ -231,11 +218,11 @@ border: 0px;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
   }
-  
+
   .card p {
     margin-bottom: 1.8em;
   }
-  
+
   .card .front,
   .card .back {
     backface-visibility: hidden;
@@ -248,7 +235,7 @@ border: 0px;
     text-align: center;
     width: 100%;
   }
-  
+
   .card .front strong {
 
     border-radius: 100%;
@@ -258,11 +245,11 @@ border: 0px;
     padding: 0 7px 4px 6px;
     height: 5%;
   }
-  
+
   .card .back {
     transform: rotateY( 180deg);
   }
-  
+
   .card .back a {
     padding: 0.3em 0.5em;
     background: #333;
@@ -272,29 +259,29 @@ border: 0px;
     font-size: 0.9em;
     transition: all 0.5s ease 0s;
   }
-  
+
   .card .back a:hover {
-    
+
     color: #333;
     text-shadow: 0 0 1px #333;
   }
-  
-  
+
+
   .cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
   }
-  
+
   .cardBox:nth-child(3) .card {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
   }
-  
+
   .cardBox:nth-child(4) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2.5s 1;
   }
-  
+
   @-webkit-keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -303,7 +290,7 @@ border: 0px;
       transform: rotateY( 0deg);
     }
   }
-  
+
   @keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -341,8 +328,8 @@ border: 0px;
     padding: 0;
     margin: 0;
   }
-  
-  
+
+
   body{
     font-family: var(--type02);
     font-size: 18px;
@@ -354,7 +341,7 @@ border: 0px;
     height: auto;
   }
 
-  
+
 
   a, .btn{
     display: inline-block;
@@ -368,7 +355,7 @@ border: 0px;
     text-align: justify;
   }
 
-  
+
   .container{
     position: absolute;
   }
@@ -683,20 +670,20 @@ border: 0px;
       --azul: rgba(0,46,167,1);
       --azul-oscuro: rgba(6,21,61,1);
       --azul-claro: rgba(25,85,243,1);
-  
+
       --montserrat: 'montserrat', verdana, sans-serif;
       --raleway: 'raleway', calibri, sans-serif ;
-  
+
       --gradiante-der-rojo-amarillo:
         linear-gradient(to right,
           var(--rojo) 0%,
           var(--amarillo) 100%);
-  
+
       --gradiante-der-blanco-alfa:
         linear-gradient(to right,
           var(--blanco-alfa05) 0%,
           var(--alfa) 100%);
-  
+
       --gradiante-arr-blanco-alfa:
         linear-gradient(to top,
           var(--blanco-alfa08) 0%,
