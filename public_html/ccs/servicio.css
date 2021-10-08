@@ -2,7 +2,8 @@
 .contenedor_padre{/*Infraestructura*/
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  grid-template-rows: 80px 50px 500px 500px 550px 1fr;
+  grid-template-rows: 80px 50px 500px 500px 600px 500px;
+  grid-row-gap: 10px;
   margin: 0 auto;
   border-radius: 5px;
   padding: 10px;
@@ -120,10 +121,11 @@
   height: 250px;
 }
 
-.carcateriticas{
+.caracteriticas{
   display: flex;
   justify-content: center;
   flex-direction:column;
+  background-color: #e8eaf6;
 }
 #caracteristicas-title{
   text-align: center;
@@ -162,8 +164,21 @@
 
 .como-lo-hacemos{
   display: flex;
+  justify-content: center;
+  flex-direction:column;
+  background-color: #e8eaf6;
+}
+
+#como-lo-hacemos-title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.como-lo-hacemos-group-cards{
+  display: flex;
   justify-content: space-around;
   flex-direction:row;
+  margin-bottom: 30px;
 }
 
 
@@ -171,7 +186,8 @@
   width: 300px;
   text-align: center;
   margin: 0px 0px;
-
+  background: #ffffff;
+  padding-bottom: 30px;
 }
 .como-lo-hacemos-cards img {
   margin-top: 50px;
