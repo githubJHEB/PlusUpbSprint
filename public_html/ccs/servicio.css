@@ -2,7 +2,7 @@
 .contenedor_padre{/*Infraestructura*/
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  grid-template-rows: 80px 50px 500px 500px 600px 500px;
+  grid-template-rows: 10px 50px 400px 400px 700px 500px;
   grid-row-gap: 10px;
   margin: 0 auto;
   border-radius: 5px;
@@ -20,13 +20,11 @@
 
 .menu{
   grid-area: menu;
-  background: #b2dfdb;
 }
 .titulo-servicio{
   margin-top: 20px;
   display: flex;
   grid-area: titulo-servicio;
-  background: #dcedc8;
   font-size: 26px;
   font-weight: bold;
   justify-content: center;
@@ -51,11 +49,18 @@
 }
 
 .slogan-1{
+  margin-top: 30px;
+  background-color: #e8eaf6;
 }
 
 .slogan-1-colum-1{
+  padding-left: 20px;
   width: 50%;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction:column;
+  font-size: 18px;
 }
 
 .slogan-1-colum-2{
@@ -63,7 +68,10 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 500px;
+}
+.slogan-1-colum-1-description-sales{
+  padding-left: 20px;
+  width: 400px;
 }
 
 #img-slogan-1-colum2{
@@ -72,53 +80,83 @@
   background-color: grey;
 }
 
-.slogan-1-colum-1-sales-argument{
-  background: #bcaaa4;
-  font-size: 26px;
-  height: 50px;
-}
-.slogan-1-colum-1-description-sales{
-  background: #ff8a65;
-  font-size: 20px;
-  height: 200px;
-}
-.slogan-1-colum-1-stadistical-data{
-  background: #bcaaa4;
-  font-size: 20px;
-  height: 250px;
-}
 
 .slogan-2{
+  background-color: #e8eaf6;
 }
 
 .slogan-2-colum-1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
 }
 
 .slogan-2-colum-2{
   width: 50%;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction:column;
+  font-size: 18px;
 }
 .slogan-2-colum-1{
   width: 50%;
 }
-.slogan-2-colum-2-sales-argument{
-  background: #bcaaa4;
-  font-size: 26px;
-  height: 50px;
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
+
+/*-- button style  slogan 2--*/
+.button-style {
+  padding: 12px 36px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0.5rem 1rem rgb(16 16 16 / 14%);
+  outline: none;
+  border: none;
+  background-size: 200% auto;
+  background-image: linear-gradient(90deg, #0e16f7 0%, #f85a40 51%, #7285f7 100%);
+  transition: all 1.2s ease-in-out;
+}
+
+
+
+.button-style:hover {
+  background-position: right;
+  color: #fff;
+}
+
+.size-char{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 .slogan-2-colum-2-description-sales{
-  background: #ff8a65;
-  font-size: 20px;
-  height: 200px%;
-}
-.slogan-2-colum-2-stadistical-data{
-  background: #bcaaa4;
-  font-size: 20px;
-  height: 250px;
+  padding: 20px;
+  width: 400px;
 }
 
 .caracteriticas{
