@@ -183,11 +183,27 @@
   background: #ffffff;
 
 }
+.caracteriticas-cards-desarrollo{
+  width: 250px;
+  text-align: center;
+  margin: 0px 0px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
 .caracteriticas-cards img {
   margin-top: 50px;
 }
 .caracteriticas-cards p {
   width: 250px;
+  margin: 0px auto;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.caracteriticas-cards-desarrollo p {
+  width: 210px;
   margin: 0px auto;
   letter-spacing: 2px;
   line-height: 20px;
