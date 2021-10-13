@@ -6,16 +6,18 @@
     padding: 10px;
 }
 
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 15% 1fr 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 10%;
     gap: 0px 0px;
 
     grid-template-areas:
         "titulo titulo titulo titulo titulo"
         "texto texto texto texto  texto"
-        "texto texto texto texto texto"
+        "texto texto texto texto texto" 
         "pie pie pie pie pie";
     position: relative;
   }
@@ -25,25 +27,30 @@
 
 .titulo {
     grid-area: titulo;
-    color: #063970;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Oswald";
     text-align: center;
-    background:#a1e0e7;
+    background-size: contain;
+    background-image: url("../img/fondo6.jpg");
+    height: 100%;
+   
 }
 
 .texto {
 grid-area: texto;
 background-color: #a1e0e7;
 border: 0px;
+background-size: cover;
+background-image: url("../img/fondo1.jpg")
 }
 
 .pie {
   grid-area: pie;
   text-align: center;
   font-size: 12px;
-  background:#a1e0e7;
+  background-size: contain;
+ background-image: url("../img/fondo6.jpg");
 }
 
 
