@@ -1,18 +1,280 @@
+/**/
+.contenedor_padre{/*Infraestructura*/
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 10px 50px 400px 400px 700px 500px;
+  grid-row-gap: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px;
+
+
+  grid-template-areas:
+      "menu"
+      "titulo-servicio"
+      "slogan-1"
+      "slogan-2"
+      "caracteriticas"
+      "como-lo-hacemos";
+}
+
+.menu{
+  grid-area: menu;
+}
+.titulo-servicio{
+  margin-top: 20px;
+  display: flex;
+  grid-area: titulo-servicio;
+  font-size: 26px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.slogan-1{
+  display: flex;
+  grid-area: slogan-1;
+  justify-content: space-around;
+}
+.slogan-2{
+  grid-area: slogan-2;
+  display: flex;
+  justify-content: space-around;
+}
+.caracteriticas{
+  grid-area: caracteriticas;
+}
+
+.como-lo-hacemos{
+  grid-area: como-lo-hacemos;
+}
+
+.slogan-1{
+  margin-top: 30px;
+  background-color: #e8eaf6;
+}
+
+.slogan-1-colum-1{
+  padding-left: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction:column;
+  font-size: 18px;
+}
+
+.slogan-1-colum-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.slogan-1-colum-1-description-sales{
+  padding-left: 20px;
+  width: 400px;
+}
+
+#img-slogan-1-colum2{
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+
+.slogan-2{
+  background-color: #e8eaf6;
+}
+
+.slogan-2-colum-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-2-colum-2{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction:column;
+  font-size: 18px;
+}
+.slogan-2-colum-1{
+  width: 50%;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+/*-- button style  slogan 2--*/
+.button-style {
+  padding: 12px 36px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0.5rem 1rem rgb(16 16 16 / 14%);
+  outline: none;
+  border: none;
+  background-size: 200% auto;
+  background-image: linear-gradient(90deg, #0e16f7 0%, #f85a40 51%, #7285f7 100%);
+  transition: all 1.2s ease-in-out;
+}
+
+
+
+.button-style:hover {
+  background-position: right;
+  color: #fff;
+}
+
+.size-char{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.slogan-2-colum-2-description-sales{
+  padding: 20px;
+  width: 400px;
+}
+
+.caracteriticas{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  background-color: #e8eaf6;
+}
+#caracteristicas-title{
+  text-align: center;
+}
+.carcateriticas-group-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+  padding: 50px;
+  background: #e8eaf6;
+}
+.caracteriticas-cards{
+  width: 300px;
+  text-align: center;
+  margin: 0px 0px;
+  padding-bottom: 50px;
+  background: #ffffff;
+
+}
+.caracteriticas-cards-desarrollo{
+  width: 250px;
+  text-align: center;
+  margin: 0px 0px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
+.caracteriticas-cards img {
+  margin-top: 50px;
+}
+.caracteriticas-cards p {
+  width: 250px;
+  margin: 0px auto;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.caracteriticas-cards-desarrollo p {
+  width: 210px;
+  margin: 0px auto;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.logo-caracteriticas{
+  width: 100px;
+  height: 100px;
+}
+
+.como-lo-hacemos{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  background-color: #e8eaf6;
+}
+
+#como-lo-hacemos-title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.como-lo-hacemos-group-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+  margin-bottom: 30px;
+}
+
+
+.como-lo-hacemos-cards{
+  width: 300px;
+  text-align: center;
+  margin: 0px 0px;
+  background: #ffffff;
+  padding-bottom: 30px;
+}
+.como-lo-hacemos-cards img {
+  margin-top: 50px;
+}
+.como-lo-hacemos-cards p {
+  width: 250px;
+  margin: 0px auto;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.icon-como-lo-hacemos{
+  width: 80px;
+  height: 80px;
+}
+
 body{
-  background-color: lightyellow;
 }
 
 .main1{
-  width: 1500px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction:row;
 }
 .main{
-  display: inline-block;
   width: 300px;
   border: 1px solid grey;
   text-align: center;
   margin: 0px 5px;
-  shadow
+
 }
 .main img {
   margin-top: 50px;
@@ -20,4 +282,8 @@ body{
 .main p {
   width: 250px;
   margin: 0px auto;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 20px;
 }

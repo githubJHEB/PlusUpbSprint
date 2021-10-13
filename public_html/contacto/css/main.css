@@ -378,3 +378,35 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+#mediaFacebook{
+
+  max-width: 4%;
+  max-height: 4%;
+}
+
+#mediaInstagram{
+  margin-left: 5%;
+  max-width: 4%;
+  max-height: 4%;
+}
+
+#mediaTelegram{
+  margin-left: 5%;
+  max-width: 4%;
+  max-height: 4%;
+}
+
+#mediaTwitter{
+  margin-left: 5%;
+  max-width: 4%;
+  max-height: 4%;
+}
+
+footer{
+  background-position: center center;
+  background-size: cover;
+  min-height: 15vh;
+  background-color: #f2f2f2;
+  text-align: center;
+}

@@ -17,7 +17,8 @@
         "texto texto texto texto  texto"
         "texto texto texto texto texto"
         "pie pie pie pie pie";
-    position: relative;}
+    position: relative;
+  }
 
 
 
@@ -209,6 +210,7 @@ border: 0px;
   }
 
   .card {
+  margin-top: 150px;
 
     cursor: default;
     height: 500px;
