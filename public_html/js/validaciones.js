@@ -25,11 +25,7 @@ for (var i in especiales) {
 if (letras.indexOf(tecla) == -1 && !tecla_especial) {
   return false;
 }
-if (nombre.length<6){
-  return false;
-}else{
-  return true;
-}
+
 }
 function confirmar_contrasena(string){
 

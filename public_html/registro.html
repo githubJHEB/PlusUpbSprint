@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Formulario de registro</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="ccs/estilos.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login _ Registro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    </head>
-    <!--Set html structure to the form jheb-->
-    <body id="body_form_registration">
-        <div class="titulo">
-          <div class="titulo">     <!-- @ menu principal -->
-            <nav>
-              <div class="menu principal">
-                <a href="#" class="btn movil">
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
 
-                <ul class="menu">
-                  <li>
-                    <a class="highlight" href="quienesSomos.html">Quienes Somos</a>
-                  </li> <li>
-                    <a href="proyectos.html">Proyectos</a>
-                  </li> <li>
-                    <a href="productos.html">Productos</a>
-                  </li> <li>
-                    <a href="contactanos.html">Contáctanos</a>
-                  </li>
-                </ul>
-              </div><!--menu principal-->
-            </nav>
-          </div><!--titulo-->
+    <link rel="stylesheet" href="ccs/login.css">
+    <link rel="stylesheet" href="ccs/estilos.css">
+</head>
+<body>
+    <div class="titulo">     <!-- @ menu principal -->
+        <nav>
+          <div class="menu principal">
+            <a href="#" class="btn movil">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
 
-        </div>
-        <form id="form_registrarse">
-            <h1>Formulario de registro</h1>
-            <input id="in_nombre_usuario" type="text" maxlength="20" placeholder="Nombre de usuario"/>
-            <input id="in_contrasena" type="password" minlength="6"  maxlength="20" placeholder="Contraseña" onkeypress="return validar_contrasena(event)" />
-            <input id="in_confirmar_contrasena" type="password" maxlength="20" placeholder="Confirmar contraseña"/>
-            <button id="btn_registrar_usuario" type="button">Registrarse</button>
-        </form>
-    </body>
+            <ul class="menu">
+              <li>
+                <a class="highlight" href="quienesSomos.html">Quienes Somos</a>
+              </li> <li>
+                <a href="proyectos.html">Proyectos</a>
+              </li> <li>
+                <a href="productos.html">Productos</a>
+              </li> <li>
+                <a href="contactanos.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div><!--menu principal-->
+        </nav>
+      </div><!--titulo-->
+
+    </div>
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn_registrar_usuario">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input id="login_username" type="text" maxlength="20" placeholder="Nombre de usuario"/>
+                       <input id="login_password" type="password" minlength="6"  maxlength="20" placeholder="Contraseña" />
+                      <input id="login_captcha" type="password" maxlength="20" placeholder="Resuelva el captacha: resultado de dividir 10 / 2"/>
+                      <button id="btn_registrar_usuario" type="button">Iniciar Sesión</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input id="in_nombre_usuario" type="text" maxlength="20" placeholder="Nombre de usuario"/>
+                        <input id="in_contrasena" type="password" minlength="6"  maxlength="20" placeholder="Contraseña" />
+                       <input id="in_confirmar_contrasena" type="password" maxlength="20" placeholder="Confirmar contraseña"/>
+                      <button id="btn_registrar_usuario" type="button">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="js/login.js"></script>
+</body>
 </html>
