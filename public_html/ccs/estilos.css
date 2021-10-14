@@ -17,7 +17,7 @@
     grid-template-areas:
         "titulo titulo titulo titulo titulo"
         "texto texto texto texto  texto"
-        "texto texto texto texto texto" 
+        "texto texto texto texto texto"
         "pie pie pie pie pie";
     position: relative;
   }
@@ -34,7 +34,7 @@
     background-size: contain;
     background-image: url("../img/fondo6.jpg");
     height: 100%;
-   
+
 }
 
 .texto {
@@ -72,38 +72,9 @@ background-image: url("../img/fondo1.jpg")
     right: -40px;
 }
 
-#btn_Registro {
-    background: #434343; /* Change from #a1e0e7; to #434343 by: Jorge-Villalba**/
-    display: block;
-    margin: 5px auto;
-    border: 3px solid #707070; /* Change from #3c6382; to #707070 by: Jorge-Villalba**/
-    padding: 14px 40px;
-    outline: none;
-    color:#4e4d4d; /* Change from aqua; to #4e4d4d by: Jorge-Villalba**/
-    border-radius: 10px;
-    transition: 0.25s;
-    cursor: pointer;
-    margin-top: 500px;
-    position: relative;
-    left: 0px;
-}
 
-#link_Registro{
-    color: #fff;
-    text-decoration: none;
-    font-family: "Oswald";
-    font-size: 18px;
-    text-align: center;
-    margin : 5px auto;
-    display: inline-block;
-    width: 19.5%;
-    margin-right: 40%;
-    margin-top:-50%;
-    position: relative;
-    left: -10px;
-    top: 5px;
-    right: 10px;
-}
+
+
 
 
 .btn-registro {
@@ -139,7 +110,7 @@ background-image: url("../img/fondo1.jpg")
   outline: none;
   border: none;
   background-size: 200% auto;
-  background-image: linear-gradient(90deg, #56c8d8 0%, #e3f2fd 51%, #0097a7 100%);
+  background-image: linear-gradient(90deg, #78909c 0%, #e2f1f8 51%, #90a4ae 100%);
 }
 
 #btn_Registro:hover {
