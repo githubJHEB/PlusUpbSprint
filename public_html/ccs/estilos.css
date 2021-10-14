@@ -7,7 +7,6 @@
 }
 
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -20,6 +19,7 @@
         "texto texto texto texto texto"
         "pie pie pie pie pie";
     position: relative;
+    background: url("../img/fondo1.jpg");
   }
 
 
@@ -31,18 +31,18 @@
     font-size: 35px;
     font-family: "Oswald";
     text-align: center;
-    background-size: contain;
-    background-image: url("../img/fondo6.jpg");
+    /*background-size: contain;*/
+    /*background-image: url("../img/fondo6.jpg");*/
     height: 100%;
 
 }
 
 .texto {
 grid-area: texto;
-background-color: #a1e0e7;
+/*background-color: #a1e0e7;*/
 border: 0px;
-background-size: cover;
-background-image: url("../img/fondo1.jpg")
+/*background-size: cover;*/
+/*background-image: url("../img/fondo1.jpg")*/
 }
 
 .pie {
@@ -50,7 +50,7 @@ background-image: url("../img/fondo1.jpg")
   text-align: center;
   font-size: 12px;
   background-size: contain;
- background-image: url("../img/fondo6.jpg");
+ /*background-image: url("../img/fondo6.jpg");*/
 }
 
 
