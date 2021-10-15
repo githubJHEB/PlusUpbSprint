@@ -410,3 +410,13 @@ footer{
   background-color: #f2f2f2;
   text-align: center;
 }
+
+.menu{
+  list-style-type: none;
+  text-align: center;
+}
+
+li{
+  display: inline;
+  margin-left: 4%; 
+}
