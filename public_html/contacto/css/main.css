@@ -162,12 +162,12 @@ iframe {
 .contact100-form-title {
   display: block;
   font-family: Ubuntu-Bold;
-  font-size: 30px;
+  font-size: 26px;
   color: #403866;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 49px;
+  padding-bottom: 30px;
 }
 
 /*------------------------------------------------------------------
@@ -418,5 +418,6 @@ footer{
 
 li{
   display: inline;
-  margin-left: 4%; 
+  margin-left: 4%;
 }
+
