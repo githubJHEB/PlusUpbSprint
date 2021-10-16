@@ -2,7 +2,7 @@
 .contenedor_padre{/*Infraestructura*/
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  grid-template-rows: 10px 50px 400px 400px 700px 500px;
+  grid-template-rows: 100px 50px 400px 400px 700px 500px;
   grid-row-gap: 10px;
   margin: 0 auto;
   border-radius: 5px;
@@ -20,6 +20,12 @@
 
 .menu{
   grid-area: menu;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #f2f2f;
 }
 .titulo-servicio{
   margin-top: 20px;
